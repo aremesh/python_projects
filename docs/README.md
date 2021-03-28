@@ -2,6 +2,7 @@
 
 - [ ] Desktop Notifier App
 - [ ] Hangman
+- [ ] Tic Tac Toe
 - [x] Dice Rolling Simulator
 - [ ] Number Guessing (10/100 options)
 - [ ] Motivation mailer
@@ -16,3 +17,6 @@
   - [ ] Hello World
   - [ ] Basic Rest API
   - [ ] Basic GraphQL API
+
+## Desktop Apps
+- [ ] Menu bar app "Hello world"
