@@ -4,7 +4,7 @@
 - [ ] Hangman
 - [ ] Tic Tac Toe
 - [x] Dice Rolling Simulator
-- [ ] Number Guessing (10/100 options)
+- [x] Number Guessing, max 10
 - [ ] Motivation mailer
   - Daily, Weekly, Monthly, Bi monthly
 
