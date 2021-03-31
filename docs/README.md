@@ -12,6 +12,8 @@
 - [ ] Flask
   - [x] Hello World
   - [ ] Basic Rest API
+    - [x] Get data Using 'Open Weather Map API'
+    - Post data from a fictional datasheet
   - [ ] Basic GraphQL API
 - [ ] Django
   - [ ] Hello World
