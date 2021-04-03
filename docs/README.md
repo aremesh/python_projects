@@ -19,7 +19,7 @@ Now your all set to go. Just run the code with `python <folder>/<file>`
 
 # Project ideas
 
-- [ ] Desktop Notifier App
+- [x] Desktop Notifier App
 - [ ] Hangman
 - [ ] Tic Tac Toe
 - [x] Dice Rolling Simulator
@@ -32,7 +32,7 @@ Now your all set to go. Just run the code with `python <folder>/<file>`
   - [x] Hello World
   - [ ] Basic Rest API
     - [x] Get data Using 'Open Weather Map API'
-    - [ ] Post data from a fictional datasheet
+    - [x] Post data from a fictional datasheet
   - [ ] Basic GraphQL API
 - [ ] Django
   - [ ] Hello World
