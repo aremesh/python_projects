@@ -1,7 +1,7 @@
 ---
 name: Bug
 about: Create a bug-report to help us address errors in the repo.
-title: '[BUG]'
+title: '[BUG]: '
 labels: bug
 assignees: ''
 
@@ -9,7 +9,7 @@ assignees: ''
 
 **Description**
 
-<!--A clear and concise description of what the bug is.-->
+A clear and concise description of what the bug is.
 
 **Working Environment**
 
