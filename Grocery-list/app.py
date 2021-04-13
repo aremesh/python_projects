@@ -16,4 +16,13 @@ add_grocery('Fruit', 'Bannana')
 add_grocery('Candy', 'Lolly\'s')
 
 
-print(grocery_list)
+print("Things to buy:")
+for key, items in grocery_list.items():
+    print("\tProduct type:", key)
+    for item in items:
+        print("\t\t" , item)
+
+# Improvements to de made.
+# - Asking input key and name of product
+# - Adding the input to the dict
+# - On finisching write to a styled txt file
