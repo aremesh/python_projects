@@ -1,4 +1,5 @@
 import os
+import sys
 from parser import args
 
 
@@ -7,8 +8,12 @@ files = []
 
 def main():
     os.chdir(args.dir)
-    printTextMat("Temporary changed path to:", args)
-    createProjectFolder(args)
+    if not os.path.exists(args.name):
+        createProjectFolder(args)
+        printTextMat(args)
+    else:
+        print("Project folder already exists")
+        sys.exit(0)
     makeFolder()
     makeFiles()
     initGit()
@@ -22,16 +27,14 @@ def main():
 
 
 def printTextMat(text, items):
-    if items.dir == '.':
-        print()
+    print()
+    if items.dir == '.' and os.path.exists(args.name):
+        print("Project created in the current directory")
     else:
-        text = f"{text} {items.dir}"
-        width = len(text)
-        print()
-        print(("").center(width, "-"))
+        text = f"Temporary path change: {items.dir}"
         print(text)
-        print(("").center(width, "-"))
-        print()
+    print()
+
 
 def createProjectFolder(items):
     os.makedirs(items.name)
