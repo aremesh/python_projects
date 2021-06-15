@@ -1,3 +1,5 @@
+import os
+from parser import args
 
 
 def printTextMat(items):
