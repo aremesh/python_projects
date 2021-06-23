@@ -2,14 +2,11 @@ import os
 import sys
 from parser import args
 from utils import (initGit, initRepo, printTextMat,
-                  createProjectFolder, makeFolders, makeFiles)
+                  createProjectFolder, makeStructure, pushRepo)
 
 folders = ['test', 'docs']
-files = [
-        ('main.py', 'utils.py'),
-        ('test',['test.py']),
-        ('docs',['README.md'])
-        ]
+files = ['main.py', 'utils.py']
+
 
 def main():
     os.chdir(args.dir)
@@ -19,18 +16,20 @@ def main():
     else:
         print("Project folder already exists")
         sys.exit(0)
-    makeFolders(folders)
-    makeFiles(files)
+    makeStructure()
     initGit()
     if args.repo:
         if args.privaterepo:
             initRepo(args.privaterepo)
         else:
             initRepo()
+        pushRepo()
     else:
         print("No online repository created")
+    print()  # empty line
+    print("Project set successfully")
+
 
 
 if __name__=="__main__":
     main()
-    print()
